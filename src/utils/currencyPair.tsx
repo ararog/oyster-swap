@@ -137,7 +137,7 @@ export function CurrencyPairProvider({ children = null as any }) {
       tokens.find((t) => t.mintAddress === mintAddressB)?.tokenSymbol ||
       mintAddressB;
 
-    document.title = `Swap | Serum (${base}/${quote})`;
+    document.title = `DoceSwap | Serum (${base}/${quote})`;
   }, [mintAddressA, mintAddressB, tokens, location]);
 
   // updates browser history on token changes
