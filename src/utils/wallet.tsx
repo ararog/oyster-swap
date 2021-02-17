@@ -32,7 +32,7 @@ export function WalletProvider({ children = null as any }) {
 
   const wallet = useMemo(() => {
     console.log("use new provider:", providerUrl, " endpoint:", endpoint);
-    if (providerUrl === "http://solongwallet.com/") {
+    if (providerUrl === "https://solongwallet.com/") {
       return new SolongAdapter(providerUrl, endpoint);
     } else {
       return new Wallet(providerUrl, endpoint);
