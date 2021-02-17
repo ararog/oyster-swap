@@ -43,7 +43,7 @@ export const AppBar = (props: { left?: JSX.Element; right?: JSX.Element }) => {
           </Menu.Item>
           <Menu.Item key="trade">
             <a
-              href={"https://dex.projectserum.com"}
+              href={"https://dex.doce.finance"}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -53,7 +53,7 @@ export const AppBar = (props: { left?: JSX.Element; right?: JSX.Element }) => {
           </Menu.Item>
           <Menu.Item key="help">
             <a
-              href={"https://serum-academy.com/en/serum-swap/"}
+              href={"https://swap.doce.finance"}
               target="_blank"
               rel="noopener noreferrer"
             >

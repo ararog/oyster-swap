@@ -210,6 +210,7 @@ export const CurrencyInput = (props: {
             boxShadow: "none",
             borderColor: "transparent",
             outline: "transpaernt",
+            color: "#BBBBBB"
           }}
           placeholder="0.00"
         />

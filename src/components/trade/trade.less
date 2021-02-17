@@ -1,6 +1,10 @@
 .trade-button {
   width: 100%;
   position: relative;
+  background-color: #945BA2;
+  border-color: #6B2679;
+  border-width: 3px;
+  border-radius: 20px;
 
   :first-child {
     width: 100%;
@@ -14,6 +18,8 @@
 }
 
 .swap-button {
+  background-color: #6B2679;
+  border-color: #945BA2;
   border-radius: 2em;
   width: 32px;
   padding-left: 8px;
@@ -21,9 +27,26 @@
 
 .input-card {
   display: flex;
+  background-color: #F6F6F6;
   flex-direction: column;
   align-items: center;
   margin-bottom: 10px;
+
+  button {
+    color: #EB526E!important;
+  }
+
+  .swap-button {
+    color: white!important;
+  }
+
+  .ant-btn-group {
+    button {
+      border-width: 0px;
+      color: white!important;
+      background-color: #6B2679;
+    }
+  }
 }
 
 .trade-address-info-button {

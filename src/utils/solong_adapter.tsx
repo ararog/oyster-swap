@@ -17,9 +17,14 @@ export class SolongAdapter extends EventEmitter {
   }
 
   async signTransaction(transaction: any) {
-    return (window as any).solong.signTransaction(transaction);
+    const trx  = await  (window as any).solong.signTransaction(transaction).catch(
+      () => {
+        throw new Error("Reject sign request!")
+      }
+    );
+    return trx
   }
-
+  
   connect() {
     if (this._onProcess) {
       return;

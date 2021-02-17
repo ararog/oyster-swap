@@ -18,13 +18,21 @@ const WalletContext = React.createContext<any>(null);
 
 export function WalletProvider({ children = null as any }) {
   const { endpoint } = useConnectionConfig();
-  const [providerUrl, setProviderUrl] = useLocalStorageState(
+  const [savedProviderUrl, setProviderUrl] = useLocalStorageState(
     "walletProvider",
     "https://www.sollet.io"
   );
+
+  let providerUrl = "";
+  if (!savedProviderUrl) {
+    providerUrl = 'https://wallet.doce.finance';
+  } else {
+    providerUrl = savedProviderUrl;
+  }
+
   const wallet = useMemo(() => {
     console.log("use new provider:", providerUrl, " endpoint:", endpoint);
-    if (providerUrl === "http://solongwallet.com") {
+    if (providerUrl === "http://solongwallet.com/") {
       return new SolongAdapter(providerUrl, endpoint);
     } else {
       return new Wallet(providerUrl, endpoint);
@@ -82,6 +90,9 @@ export function WalletProvider({ children = null as any }) {
 
 export function useWallet() {
   const context = useContext(WalletContext);
+  if (!context) {
+    throw new Error('Missing wallet context');
+  }
   return {
     connected: context.connected,
     wallet: context.wallet,
