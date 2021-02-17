@@ -6,11 +6,13 @@ import { useLocalStorageState } from "./utils";
 import { SolongAdapter } from "./solong_adapter";
 
 export const WALLET_PROVIDERS = [
-  { name: "sollet.io", url: "https://www.sollet.io" },
-  { name: "solongwallet.com", url: "http://solongwallet.com" },
-  { name: "solflare.com", url: "https://solflare.com/access-wallet" },
-  { name: "mathwallet.org", url: "https://www.mathwallet.org" },
-];
+  { name: 'Sollet', url: 'https://www.sollet.io' },
+  { name: 'Doce', url: 'https://wallet.doce.finance' },
+  { name: 'Solong', url: 'https://solongwallet.com/' },
+  { name: 'SolFlare', url: 'https://solflare.com/access-wallet' },
+  { name: 'Bonfida', url: 'https://bonfida.com/wallet' },
+  { name: "Math", url: "https://www.mathwallet.org" },
+]
 
 const WalletContext = React.createContext<any>(null);
 
