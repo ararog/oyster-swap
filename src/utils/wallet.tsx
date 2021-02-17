@@ -9,9 +9,7 @@ export const WALLET_PROVIDERS = [
   { name: 'Sollet', url: 'https://www.sollet.io' },
   { name: 'Doce', url: 'https://wallet.doce.finance' },
   { name: 'Solong', url: 'https://solongwallet.com/' },
-  { name: 'SolFlare', url: 'https://solflare.com/access-wallet' },
   { name: 'Bonfida', url: 'https://bonfida.com/wallet' },
-  { name: "Math", url: "https://www.mathwallet.org" },
 ]
 
 const WalletContext = React.createContext<any>(null);
