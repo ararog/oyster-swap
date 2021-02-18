@@ -1,5 +1,6 @@
 import React from "react";
 import { Button, Card, Popover } from "antd";
+import header from '../assets/header.png';
 import { TradeEntry } from "./trade";
 import { AddToLiquidity } from "./pool/add";
 import { Settings } from "./settings";
@@ -59,6 +60,9 @@ export const ExchangeView = (props: {}) => {
           </Popover>
         }
       />
+      <div className='header'>
+        <img src={header} alt='' />
+      </div>        
       <Card
         className="exchange-card"
         headStyle={{ padding: 0 }}
