@@ -258,9 +258,27 @@ h3 {
   }
 }
 
+.header {
+  height: 200px;
+  img {
+    max-height: 400px;
+    max-width: 500px;
+    object-fit: cover;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .exchange-card {
     width: 360px;
+  }
+
+  .header {
+    height: 120px;
+    img {
+      max-height: 200px;
+      max-width: 300px;
+      object-fit: cover;
+    }
   }
 }
 
@@ -298,14 +316,5 @@ h3 {
   .ant-select-item-option-selected {
     color: white!important;
     background-color: #EB526E!important;
-  }
-}
-
-.header {
-  height: 200px;
-  img {
-    max-height: 400px;
-    max-width: 500px;
-    object-fit: cover;
   }
 }
