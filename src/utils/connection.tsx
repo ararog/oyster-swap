@@ -24,7 +24,7 @@ export const ENDPOINTS = [
 ];
 
 const DEFAULT = ENDPOINTS[0].endpoint;
-const DEFAULT_SLIPPAGE = 0.005;
+const DEFAULT_SLIPPAGE = 0.01;
 
 interface ConnectionConfig {
   connection: Connection;

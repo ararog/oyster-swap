@@ -81,7 +81,7 @@ export const AppBar = (props: { left?: JSX.Element; right?: JSX.Element }) => {
               type="text"
               size="large"
               onClick={connected ? wallet.disconnect : wallet.connect}
-              style={{ color: "#2abdd2" }}
+              style={{ color: "#ff00a8" }}
             >
               Connect
             </Button>
