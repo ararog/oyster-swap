@@ -51,13 +51,23 @@ export const AppBar = (props: { left?: JSX.Element; right?: JSX.Element }) => {
               <sup>↗</sup>
             </a>
           </Menu.Item>
-          <Menu.Item key="help">
+          <Menu.Item key="twitter">
             <a
-              href={"https://swap.doce.finance"}
+              href={"https://twitter.com/DoceFinance"}
               target="_blank"
               rel="noopener noreferrer"
             >
-              Help
+              Twitter
+              <sup>↗</sup>
+            </a>
+          </Menu.Item>
+          <Menu.Item key="twitter">
+            <a
+              href={"https://t.me/docefinance"}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Telegram
               <sup>↗</sup>
             </a>
           </Menu.Item>
