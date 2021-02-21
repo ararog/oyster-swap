@@ -124,7 +124,7 @@ export const ChartsView = React.memo(() => {
             },
             itemStyle: {
               normal: {
-                borderColor: "#000",
+                borderColor: "#fff",
               },
             },
             breadcrumb: {

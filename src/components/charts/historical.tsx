@@ -79,7 +79,7 @@ export const PoolLineChart = React.memo(
       if (echartsRef.current) {
         echartsRef.current.setOption({
           textStyle: {
-            color: "#fff",
+            color: "#945BA2",
           },
           tooltip: {
             trigger: "axis",
