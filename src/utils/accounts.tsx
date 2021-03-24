@@ -336,7 +336,8 @@ const UseNativeAccount = () => {
         setNativeAccount(acc);
       }
     });
-  }, [setNativeAccount, wallet, connection]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [setNativeAccount, wallet, wallet?.publicKey, connection]);
 
   useEffect(() => {
     if (!wallet?.publicKey) {
@@ -349,7 +350,8 @@ const UseNativeAccount = () => {
     }
 
     accountsCache.set(account.pubkey.toBase58(), account);
-  }, [wallet, nativeAccount]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [wallet?.publicKey, nativeAccount]);
 
   return { nativeAccount };
 };
